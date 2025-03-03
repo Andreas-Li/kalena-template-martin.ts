@@ -1,12 +1,12 @@
 import { createRoute } from "@kalena/framework";
 import { isPublic } from "@permissions/public.ts";
 import { BaseLayout } from "@comp/layout/BaseLayout.tsx";
-import { Text } from "@comp/content/Text.tsx";
+import { SpotifyPlayer } from "@comp/content/SpotifyPlayer.tsx";
 
 const Home = () => {
   return (
     <BaseLayout title="Home">
-      <Text>Home is where home isssssss</Text>
+      <SpotifyPlayer></SpotifyPlayer>
     </BaseLayout>
   );
 };

@@ -18,7 +18,7 @@
     "lint": "deno lint .",
     "fmt": "deno fmt .",
     "dev:tailwind": "./tailwindcli -i ./src/main.css -o ./public/main.css --minify --watch",
-    "dev": "deno run --unstable-otel --unstable-temporal --allow-net --allow-read --allow-env --watch ./src/main.ts",
+    "dev": "doppler run --project spotify --config dev -- deno run --unstable-otel --unstable-temporal --allow-net --allow-read --allow-env --watch ./src/main.ts",
     "start": "deno run --unstable-otel --unstable-temporal --allow-net --allow-read --allow-env --watch ./src/main.ts",
     "comp": "deno run --allow-read --allow-net --allow-write https://raw.githubusercontent.com/Hortashaorg/auro/040400e9edebf8970fa106b5e9d128b23a64e775/services/app/components/cli.ts"
   },
