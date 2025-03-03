@@ -6,7 +6,7 @@ import { Text } from "@comp/content/Text.tsx";
 const Home = () => {
   return (
     <BaseLayout title="Home">
-      <Text>Home</Text>
+      <Text>Home is where home isssssss</Text>
     </BaseLayout>
   );
 };
@@ -19,5 +19,5 @@ export const homeRoute = createRoute({
     redirectPath: "/",
   },
   partial: false,
-  hmr: Deno.env.get("ENV") === "local",
+  hmr: true,
 });
